@@ -1,6 +1,6 @@
 // using javac and java commands to compile and run a simple Java program
-// to compile: javac Target.java
-// to run: java Target
+// to compile: javac ./src/Target.java -s ./build
+// to run: java ./build/Target
 // This program prints "Hello World!" to the console
 
 public class Target{
