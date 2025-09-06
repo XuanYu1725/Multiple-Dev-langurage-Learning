@@ -53,7 +53,18 @@ Scanner scanner = new Scanner(System.in);
 
 通过一系列以 `next` 开头的成员方法可以进行各种所需的读取操作。
 
-不过需要注意的是，Java 中使用 Scanner 在循环中检测换行比较棘手，因此在第三个需求中提供的是手动结束输入的方案。
+由于Java对流的包装比较少，像 C/C++ 那样检测下一个输入是不是换行符比较棘手，所以在这个例子中，我们先读入一整行，再将读取的数据作为输入流用另一个 Scanner 对象处理
+
+```java
+Scanner scanner = new Scanner(System.in);
+String line = scanner.nextLine();
+Scanner lineScanner = new Scanner(line);
+int sum = 0;
+while (lineScanner.hasNextInt()) {
+    int num = lineScanner.nextInt();
+    sum += num;
+}
+```
 
 # Python
 
