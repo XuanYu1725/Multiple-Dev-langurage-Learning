@@ -49,7 +49,7 @@ public class HelloWorld {
 
 - `System.out.println("Hello World!");`：System.out 是标准输出对象，println 方法会输出内容并换行。
 
-## Golang(Go)
+## Golang
 
 ```go
 package main
@@ -84,7 +84,7 @@ if __name__ == '__main__':
 
 这个 if 语句判断的是该py程序是否被作为主程序运行。
 
-## MCF(???)
+## Mcfunction(???)
 
 ```mcfunction
 say Hello World!
