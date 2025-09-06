@@ -7,7 +7,7 @@ public class Input02 {
         System.out.print("Enter 2 text: ");
         String input1 = scanner.next();
         String input2 = scanner.next();
-        System.out.println("You entered: " + input1 + " " + input2);
+        System.out.println("You entered: " + input1 + input2);
         scanner.close();
     }
 }
