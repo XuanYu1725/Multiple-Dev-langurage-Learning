@@ -5,7 +5,7 @@ int main(){
     int sum = 0, num;
     printf("Enter numbers (space-separated): ");
     while(scanf("%d", &num) == 1){ // scanf returns the number of successfully read items
-        sum += num;
+        sum = sum + num;
 
         if (getchar() == '\n') { // check newline for end of input
             break;

@@ -10,7 +10,7 @@ public class Input03 {
         int sum = 0;
         while (lineScanner.hasNextInt()) {
             int num = lineScanner.nextInt();
-            sum += num;
+            sum = sum + num;
         }
         System.out.println("Sum: " + sum);
         scanner.close();

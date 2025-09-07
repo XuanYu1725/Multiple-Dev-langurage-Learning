@@ -7,7 +7,7 @@ int main(){
     int sum = 0, num;
     cout << "Enter numbers (space-separated): ";
     while(cin >> num){ // cin returns the stream, which is evaluated as true if the read was successful
-        sum += num;
+        sum = sum + num;
 
         if (cin.peek() == '\n') { // check newline for end of input
             break;
